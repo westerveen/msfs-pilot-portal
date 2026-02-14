@@ -11,9 +11,9 @@ interface ToastProps {
 }
 
 const typeStyles: Record<ToastType, string> = {
-  xp: "border-amber-500/50 bg-amber-500/10",
-  promotion: "border-emerald-500/50 bg-emerald-500/10",
-  system: "border-blue-500/50 bg-blue-500/10",
+  xp: "border-warning/50 bg-warning/10",
+  promotion: "border-primary/50 bg-primary/10",
+  system: "border-primary/50 bg-primary/10",
   default: "border-white/20 bg-white/5",
 };
 

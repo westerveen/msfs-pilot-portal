@@ -81,8 +81,8 @@ export function DutyClock() {
   return (
     <div className="glass-card rounded-xl p-6 border border-white/10">
       <div className="flex items-center gap-2 mb-4">
-        <Clock className="w-5 h-5 text-gray-400" />
-        <h2 className="text-lg font-semibold text-white">Duty</h2>
+        <Clock className="w-5 h-5 text-primary" />
+        <h2 className="text-lg font-semibold text-white">Duty clock</h2>
       </div>
       <div className="text-3xl font-mono text-white mb-4">
         {formatTime(elapsed)}
@@ -92,7 +92,7 @@ export function DutyClock() {
         className={`px-4 py-2 rounded-lg font-medium transition ${
           clockedIn
             ? "bg-red-500/20 text-red-400 hover:bg-red-500/30 border border-red-500/40"
-            : "bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 border border-emerald-500/40"
+            : "bg-primary/20 text-primary hover:bg-primary/30 border border-primary/40"
         }`}
       >
         {clockedIn ? "Klok uit" : "Klok in"}

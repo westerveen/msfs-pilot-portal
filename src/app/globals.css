@@ -3,20 +3,26 @@
 @tailwind utilities;
 
 :root {
-  --aviation-dark: #0a0a0a;
+  --aviation-dark: #0a0f1a;
+  --primary: #06b6d4;
+  --warning: #f59e0b;
   --glass-bg: rgba(255, 255, 255, 0.06);
-  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.08);
   --sidebar-width: 4rem;
 }
 
 body {
   background-color: var(--aviation-dark);
-  color: #e5e5e5;
+  color: #e2e8f0;
 }
 
-/* Glassmorphism card base */
+/* Glassmorphism card base – aviation dark + slate tint */
 .glass-card {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);

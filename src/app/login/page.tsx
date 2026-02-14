@@ -13,7 +13,7 @@ export default function LoginPage() {
       className="min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat p-4"
       style={{
         backgroundImage: "url(/images/cockpit-bg.jpg)",
-        backgroundColor: "#0a0a0a",
+        backgroundColor: "#0a0f1a",
       }}
     >
       <div className="absolute inset-0 bg-aviation-dark/80" />
@@ -42,7 +42,7 @@ export default function LoginPage() {
             />
             <button
               type="submit"
-              className="w-full py-3 rounded-lg bg-white/20 hover:bg-white/30 text-white font-medium transition"
+              className="w-full py-3 rounded-lg bg-primary text-slate-900 font-medium hover:bg-primary-hover transition focus:ring-2 focus:ring-primary/50"
             >
               {isRegister ? "Create account" : "Sign in"}
             </button>

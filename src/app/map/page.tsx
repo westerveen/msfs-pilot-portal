@@ -36,7 +36,8 @@ export default function MapPage() {
         </h1>
         <button
           onClick={triggerPanic}
-          className="flex items-center gap-2 px-4 py-2 rounded-lg bg-red-500/20 text-red-400 border border-red-500/50 hover:bg-red-500/30"
+          className="flex items-center gap-2 px-4 py-2 rounded-lg bg-red-500/20 text-red-400 border border-red-500/50 hover:bg-red-500/30 font-medium"
+          aria-label="Squawk 7700 Panic"
         >
           <AlertTriangle className="w-4 h-4" />
           Squawk 7700 / Panic

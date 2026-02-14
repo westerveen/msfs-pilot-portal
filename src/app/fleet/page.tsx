@@ -19,8 +19,8 @@ export default function FleetPage() {
   return (
     <div className="p-6 space-y-6">
       <h1 className="text-2xl font-bold text-white flex items-center gap-2">
-        <Plane className="w-6 h-6" />
-        Fleet
+        <Plane className="w-6 h-6 text-primary" />
+        Fleet Status
       </h1>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {fleet.map((a) => (
@@ -36,7 +36,7 @@ export default function FleetPage() {
                 <p className="text-sm text-gray-500 font-mono">{a.icao} — Class {a.class}</p>
               </div>
               {a.status === "in_maintenance" && (
-                <span className="flex items-center gap-1 text-amber-400 text-sm">
+                <span className="flex items-center gap-1 text-warning text-sm">
                   <Wrench className="w-4 h-4" />
                   In Maintenance
                 </span>
@@ -50,7 +50,7 @@ export default function FleetPage() {
               <div className="h-2 bg-white/10 rounded-full overflow-hidden">
                 <div
                   className={`h-full rounded-full transition-all ${
-                    a.health < 20 ? "bg-amber-500" : a.health < 50 ? "bg-yellow-500" : "bg-emerald-500"
+                    a.health < 20 ? "bg-warning" : a.health < 50 ? "bg-yellow-500" : "bg-primary"
                   }`}
                   style={{ width: `${a.health}%` }}
                 />
